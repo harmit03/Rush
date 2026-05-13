@@ -43,6 +43,9 @@ val gitHash = execute("git", "rev-parse", "HEAD").take(7)
 android {
     namespace = "com.shub39.rush"
     compileSdk = libs.versions.compileSdk.get().toInt()
+    buildFeatures {
+        buildConfig = true
+    }
 
     defaultConfig {
         applicationId = "com.shub39.rush"
@@ -64,6 +67,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro",
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
 
         create("beta") {

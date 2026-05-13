@@ -36,8 +36,8 @@ import com.shub39.rush.domain.enums.PaletteStyle
 data class Theme(
     val seedColor: Int = 0xFFFFFF,
     val appTheme: AppTheme = AppTheme.SYSTEM,
-    val withAmoled: Boolean = false,
+    val withAmoled: Boolean = true,
     val style: PaletteStyle = PaletteStyle.TONALSPOT,
-    val materialTheme: Boolean = false,
+    val materialTheme: Boolean = true,
     val font: Fonts = Fonts.FIGTREE,
 )

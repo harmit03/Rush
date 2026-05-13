@@ -16,7 +16,6 @@
  */
 package com.shub39.rush.data.network
 
-import com.shub39.rush.BuildConfig
 import com.shub39.rush.data.network.dto.lrclib.LrcGetDto
 import com.shub39.rush.domain.Result
 import com.shub39.rush.domain.SourceError
@@ -37,6 +36,7 @@ import io.ktor.http.HttpHeaders
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 import org.koin.core.annotation.Single
+import com.shub39.rush.BuildConfig
 
 @Single
 class LrcLibApi {

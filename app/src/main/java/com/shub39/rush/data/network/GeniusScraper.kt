@@ -19,7 +19,6 @@ package com.shub39.rush.data.network
 import com.fleeksoft.ksoup.Ksoup
 import com.fleeksoft.ksoup.nodes.Element
 import com.fleeksoft.ksoup.nodes.TextNode
-import com.shub39.rush.BuildConfig
 import com.shub39.rush.domain.Result
 import com.shub39.rush.domain.SourceError
 import io.ktor.client.HttpClient
@@ -37,6 +36,7 @@ import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 import org.koin.core.annotation.Single
+import com.shub39.rush.BuildConfig
 
 // thanks to https://github.com/imjyotiraditya/genius-lyrics-cli and
 // https://github.com/rramiachraf/dumb

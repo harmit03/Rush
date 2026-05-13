@@ -28,7 +28,7 @@ typealias Changelog = List<VersionEntry>
 @Stable
 @Immutable
 data class GlobalState(
-    val isProUser: Boolean = false,
+    val isProUser: Boolean = true,
     val theme: Theme = Theme(),
     val onBoardingDone: Boolean = true,
     val notificationAccess: Boolean = false,

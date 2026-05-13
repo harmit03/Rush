@@ -16,7 +16,6 @@
  */
 package com.shub39.rush.data.network
 
-import com.shub39.rush.BuildConfig
 import com.shub39.rush.domain.Result
 import com.shub39.rush.domain.util.TTMLParser
 import io.ktor.client.HttpClient
@@ -34,6 +33,7 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import org.koin.core.annotation.Single
+import com.shub39.rush.BuildConfig
 
 @Single
 class LyricsPlusApi {

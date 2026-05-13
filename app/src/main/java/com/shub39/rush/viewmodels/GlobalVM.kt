@@ -18,7 +18,6 @@ package com.shub39.rush.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.shub39.rush.BuildConfig
 import com.shub39.rush.app.GlobalAction
 import com.shub39.rush.app.GlobalState
 import com.shub39.rush.billing.BillingHandler
@@ -40,6 +39,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import org.koin.core.annotation.KoinViewModel
+import com.shub39.rush.BuildConfig
 
 @KoinViewModel
 class GlobalVM(
